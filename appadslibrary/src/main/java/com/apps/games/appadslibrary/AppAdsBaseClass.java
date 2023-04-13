@@ -1,5 +1,6 @@
 package com.apps.games.appadslibrary;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
@@ -19,10 +20,10 @@ public class AppAdsBaseClass extends AppCompatActivity {
 
     }
 
-    public List<AppInfo> getAppsDataList()
+    public List<AppInfo> getAppsDataList(Activity context)
     {
 
-        PackageManager pManager = this.getPackageManager();
+        PackageManager pManager = context.getPackageManager();
         List<AppInfo> appsList = new ArrayList<AppInfo>();
 
         Intent i = new Intent(Intent.ACTION_MAIN, null);

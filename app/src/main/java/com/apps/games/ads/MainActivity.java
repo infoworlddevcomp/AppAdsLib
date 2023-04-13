@@ -19,7 +19,7 @@ public class MainActivity extends AppAdsBaseClass {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getAppsDataList();
+
 
     }
 
