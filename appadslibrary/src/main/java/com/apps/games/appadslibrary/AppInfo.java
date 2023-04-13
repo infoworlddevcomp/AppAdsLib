@@ -6,7 +6,7 @@ import android.graphics.drawable.Drawable;
 
 public class AppInfo {
 
-    CharSequence label;
-    CharSequence packageName;
-    Drawable icon;
+    public  CharSequence label;
+    public CharSequence packageName;
+    public Drawable icon;
 }
